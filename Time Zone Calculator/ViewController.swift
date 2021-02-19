@@ -8,7 +8,9 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+     
+    @IBOutlet weak var tzOut1: NSDatePicker!
+    @IBOutlet weak var inputTz: NSComboBox!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,5 +24,12 @@ class ViewController: NSViewController {
     }
 
 
+    @IBAction func tzSelect(_ sender: Any) {
+        
+        
+       
+    }
+    
+    
 }
 
