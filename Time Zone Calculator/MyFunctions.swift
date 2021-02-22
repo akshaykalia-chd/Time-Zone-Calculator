@@ -7,27 +7,9 @@
 
 import Foundation
 import SQLite3
+import Cocoa
 
-func timeZoneList() -> [String]{
-    
-    var timeZones: [String] = []
-    for timeZone in TimeZone.abbreviationDictionary {
-        let timeZoneName: String = timeZone.key + ":" + timeZone.value
-        timeZones.append(timeZoneName)
-        
-
-    }
-    let dbHandle = openTzDb()
-    if let unwrappeddbHandle = dbHandle{
-        let sqlStatment = "SELECT * FROM ComboSaveState"
-        query(dbPointer: unwrappeddbHandle, queryStatementString: sqlStatment)
-        sqlite3_close(unwrappeddbHandle)
-    }
-
-return timeZones
-}
-
-func openTzDb() -> OpaquePointer? {
+func openDb() -> OpaquePointer? {
     let dbUrl = try! FileManager.default
         .url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         .appendingPathComponent("tzData.db")
@@ -62,25 +44,30 @@ sqlite3_finalize(updateStatement)
 }
   
     
-func query(dbPointer:OpaquePointer, queryStatementString:String) {
-    //let queryStatementString = "SELECT 'Col Name' FROM 'Some Table Name';"
-    //let queryStatementString = "SELECT 'Col Name' FROM 'Some Table Name' WHERE 'Col Name' = 'Col Val';"
+func query(dbPointer:OpaquePointer, queryStatementString:String) -> [String]{
+    // SELECT 'Some Col' FROM 'Some Table' WHERE 'Seom Col' = 'Some val';
     var queryStatement: OpaquePointer?
     if sqlite3_prepare_v2(dbPointer, queryStatementString,  -1, &queryStatement, nil) == SQLITE_OK {
-      print("\n")
-      while (sqlite3_step(queryStatement) == SQLITE_ROW) {
-        //let id = sqlite3_column_int(queryStatement, 0)
-        guard let queryResultCol1 = sqlite3_column_text(queryStatement, 1) else {
-          print("Query result is nil.")
-          return
+        //let numCols: Int32 = sqlite3_column_count(queryStatement)
+        var outPut: [String] = []
+            //var intermOutput:[String]=[]
+            while (sqlite3_step(queryStatement) == SQLITE_ROW) {
+                if let queryResultCol = sqlite3_column_text(queryStatement, 0){
+                outPut.append(String(cString: queryResultCol))
+                }
+                else {print("Query result is nil.")}
+            }
+        return outPut
         }
-        let name = String(cString: queryResultCol1)
-        print("Query Result:")
-        print("\(name)")
-      }
-    } else {
-        let errorMessage = String(cString: sqlite3_errmsg(dbPointer))
-        print("\nQuery is not prepared \(errorMessage)")
+    else {
+    let errorMessage = String(cString: sqlite3_errmsg(dbPointer))
+    print("\nQuery is not prepared \(errorMessage)")
     }
-    sqlite3_finalize(queryStatement)
-  }
+     sqlite3_finalize(queryStatement)
+    return [""]
+}
+
+
+
+
+

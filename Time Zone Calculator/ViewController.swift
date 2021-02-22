@@ -7,60 +7,96 @@
 
 import Cocoa
 import Foundation
+import SQLite3
 
 class ViewController: NSViewController {
     
     private var comboBoxData = timeZoneList()
     
     
-    //input Control variables
-    @IBOutlet weak var inputTz: NSComboBox!
-    @IBOutlet weak var inputDatedata: NSDatePicker!
+    //input/Output Control variables
+    @IBOutlet weak var
+        comboData1,
+        comboData2,
+        comboData3,
+        comboData4,
+        comboData5,
+        comboData6,
+        comboData7,
+        comboData8,
+        comboData9,
+        comboData10,
+        comboData11,
+        comboData12: NSComboBox!
+    @IBOutlet weak var
+        dateData1,
+        dateData2,
+        dateData3,
+        dateData4,
+        dateData5,
+        dateData6,
+        dateData7,
+        dateData8,
+        dateData9,
+        dateData10,
+        dateData11,
+        dateData12 : NSDatePicker!
     
-    //output Contorl variables
-    @IBOutlet weak var outputTz1: NSComboBox!
-    @IBOutlet weak var outputDatedata1: NSDatePicker!
     
-    @IBOutlet weak var outputTz2: NSComboBox!
-    @IBOutlet weak var outputDatedata2: NSDatePicker!
     
-    @IBOutlet weak var outputTz3: NSComboBox!
-    @IBOutlet weak var outputDatedata3: NSDatePicker!
-    
-    @IBOutlet weak var outputTz4: NSComboBox!
-    @IBOutlet weak var outputDatedata4: NSDatePicker!
-    
-    @IBOutlet weak var outputTz5: NSComboBox!
-    @IBOutlet weak var outputDatedata5: NSDatePicker!
-    
-    @IBOutlet weak var outputTz6: NSComboBox!
-    @IBOutlet weak var outputDatedata6: NSDatePicker!
-    
-    @IBOutlet weak var outputTz7: NSComboBox!
-    @IBOutlet weak var outputDatedata7: NSDatePicker!
-    
-    @IBOutlet weak var outputTz8: NSComboBox!
-    @IBOutlet weak var outputDatedata8: NSDatePicker!
-    
-    @IBOutlet weak var outputTz9: NSComboBox!
-    @IBOutlet weak var outputDatedata9: NSDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        inputTz?.dataSource = self
-        outputTz1?.dataSource = self
-        outputTz2?.dataSource = self
-        outputTz3?.dataSource = self
-        outputTz4?.dataSource = self
-        outputTz5?.dataSource = self
-        outputTz6?.dataSource = self
-        outputTz7?.dataSource = self
-        outputTz8?.dataSource = self
-        outputTz9?.dataSource = self
+        comboData1.dataSource = self
+        comboData1.stringValue = getComboState(comboName: "comboData1")
+        dateData1.dateValue = Date()
+                
+        comboData2.dataSource = self
+        comboData2.stringValue = getComboState(comboName: "comboData2")
+        dateData2.dateValue = Date()
         
+        comboData3.dataSource = self
+        comboData3.stringValue = getComboState(comboName: "comboData3")
+        dateData3.dateValue = Date()
         
+        comboData4.dataSource = self
+        comboData4.stringValue = getComboState(comboName: "comboData4")
+        dateData4.dateValue = Date()
+        
+        comboData5.dataSource = self
+        comboData5.stringValue = getComboState(comboName: "comboData5")
+        dateData5.dateValue = Date()
+        
+        comboData6.dataSource = self
+        comboData6.stringValue = getComboState(comboName: "comboData6")
+        dateData6.dateValue = Date()
+        
+        comboData7.dataSource = self
+        comboData7.stringValue = getComboState(comboName: "comboData7")
+        dateData7.dateValue = Date()
+        
+        comboData8.dataSource = self
+        comboData8.stringValue = getComboState(comboName: "comboData8")
+        dateData8.dateValue = Date()
+        
+        comboData9.dataSource = self
+        comboData9.stringValue = getComboState(comboName: "comboData9")
+        dateData9.dateValue = Date()
+        
+        comboData10.dataSource = self
+        comboData10.stringValue = getComboState(comboName: "comboData10")
+        dateData10.dateValue = Date()
+        
+        comboData11.dataSource = self
+        comboData11.stringValue = getComboState(comboName: "comboData11")
+        dateData11.dateValue = Date()
+        
+        comboData12.dataSource = self
+        comboData12.stringValue = getComboState(comboName: "comboData12")
+        dateData12.dateValue = Date()
+               
     }
 
     override var representedObject: Any? {
@@ -69,111 +105,72 @@ class ViewController: NSViewController {
         }
     }
   
-    //Control Actions Input Data
+    //Control Actions ComboBox
     
-    @IBAction func inputTzSelected(_ sender: NSComboBox) {
-        print("input Time Zone modifed \(inputTz.stringValue)")
-        print("Date and time data is \(inputDatedata.dateValue)")
+    @IBAction func combo1Action(_ sender: NSComboBox) {
+        saveComboState(comboValue: comboData1.stringValue, comboName: "comboData1")
+        setToNow(timeZoneValue: comboData1.stringValue)
+        }
+    @IBAction func combo2Action(_ sender: NSComboBox) {
+        saveComboState(comboValue: comboData2.stringValue, comboName: "comboData2")
+    }
+    @IBAction func combo3Action(_ sender: NSComboBox) {
+        saveComboState(comboValue: comboData3.stringValue, comboName: "comboData3")
+    }
+    @IBAction func combo4Action(_ sender: NSComboBox) {
+        saveComboState(comboValue: comboData4.stringValue, comboName: "comboData4")
+    }
+    @IBAction func combo5Action(_ sender: NSComboBox) {
+        saveComboState(comboValue: comboData5.stringValue, comboName: "comboData5")
+    }
+    @IBAction func combo6Action(_ sender: NSComboBox) {
+        saveComboState(comboValue: comboData6.stringValue, comboName: "comboData6")
+    }
+    @IBAction func combo7Action(_ sender: NSComboBox) {
+        saveComboState(comboValue: comboData7.stringValue, comboName: "comboData7")
+    }
+    @IBAction func combo8Action(_ sender: NSComboBox) {
+        saveComboState(comboValue: comboData8.stringValue, comboName: "comboData8")
+    }
+    @IBAction func combo9Action(_ sender: NSComboBox) {
+        saveComboState(comboValue: comboData9.stringValue, comboName: "comboData9")
+    }
+    @IBAction func combo10Action(_ sender: NSComboBox) {
+        saveComboState(comboValue: comboData10.stringValue, comboName: "comboData10")
+    }
+    @IBAction func combo11Action(_ sender: NSComboBox) {
+        saveComboState(comboValue: comboData11.stringValue, comboName: "comboData11")
+    }
+    @IBAction func combo12Action(_ sender: NSComboBox) {
+        saveComboState(comboValue: comboData12.stringValue, comboName: "comboData12")
     }
     
-    @IBAction func inputDatedataSelected(_ sender: NSDatePicker) {
-        print("input Time Zone modifed \(inputTz.stringValue)")
-        print("Date and time data is \(inputDatedata.dateValue)")
+    //Contorl Actions Datapicker
+    @IBAction func datepicker1Action(_ sender: NSDatePicker) {
+    }
+    @IBAction func datepicker2Action(_ sender: NSDatePicker) {
+    }
+    @IBAction func datepicker3Action(_ sender: NSDatePicker) {
+    }
+    @IBAction func datepicker4Action(_ sender: NSDatePicker) {
+    }
+    @IBAction func datepicker5Action(_ sender: NSDatePicker) {
+    }
+    @IBAction func datepicker6Action(_ sender: NSDatePicker) {
+    }
+    @IBAction func datepicker7Action(_ sender: NSDatePicker) {
+    }
+    @IBAction func datepicker8Action(_ sender: NSDatePicker) {
+    }
+    @IBAction func datepicker9Action(_ sender: NSDatePicker) {
+    }
+    @IBAction func datepicker10Action(_ sender: NSDatePicker) {
+    }
+    @IBAction func datepicker11Action(_ sender: NSDatePicker) {
+    }
+    @IBAction func datepicker12Action(_ sender: NSDatePicker) {
     }
     
-   
-    //Control Actions Output Data
-    
-    @IBAction func outputTz1Selected(_ sender: NSComboBox) {
-        print("Out Time Zone modifed to \(outputTz1.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata1.dateValue)")
-    }
-    
-    @IBAction func outputDatedata1Selected(_ sender: NSDatePicker) {
-        print("Out Time Zone modifed to \(outputTz1.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata1.dateValue)")
-    }
-    
-    @IBAction func outputTz2Selected(_ sender: NSComboBox) {
-        print("Out Time Zone modifed to \(outputTz2.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata2.dateValue)")
-    }
-    
-    @IBAction func outputDatedata2Selected(_ sender: NSDatePicker) {
-        print("Out Time Zone modifed to \(outputTz2.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata2.dateValue)")
-    }
-    
-    @IBAction func outputTz3Selected(_ sender: NSComboBox) {
-        print("Out Time Zone modifed to \(outputTz3.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata3.dateValue)")
-    }
-    
-    @IBAction func outputDatedata3Selected(_ sender: NSDatePicker) {
-        print("Out Time Zone modifed to \(outputTz3.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata3.dateValue)")
-    }
-    
-    @IBAction func outputTz4Selected(_ sender: NSComboBox) {
-        print("Out Time Zone modifed to \(outputTz4.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata4.dateValue)")
-    }
-    
-    @IBAction func outputDatedata4Selected(_ sender: NSDatePicker) {
-        print("Out Time Zone modifed to \(outputTz4.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata4.dateValue)")
-    }
-    
-    @IBAction func outputTz5Selected(_ sender: NSComboBox) {
-        print("Out Time Zone modifed to \(outputTz5.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata5.dateValue)")
-    }
-    
-    @IBAction func outputDatedata5Selected(_ sender: NSDatePicker) {
-        print("Out Time Zone modifed to \(outputTz5.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata5.dateValue)")
-    }
-    
-    @IBAction func outputTz6Selected(_ sender: NSComboBox) {
-        print("Out Time Zone modifed to \(outputTz6.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata6.dateValue)")
-    }
-    
-    @IBAction func outputDatedata6Selected(_ sender: NSDatePicker) {
-        print("Out Time Zone modifed to \(outputTz6.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata6.dateValue)")
-    }
-    
-    @IBAction func outputTz7Selected(_ sender: NSComboBox) {
-        print("Out Time Zone modifed to \(outputTz7.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata7.dateValue)")
-    }
-    
-    @IBAction func outputDatedata7Selected(_ sender: NSDatePicker) {
-        print("Out Time Zone modifed to \(outputTz7.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata7.dateValue)")
-    }
-    
-    @IBAction func outputTz8Selected(_ sender: NSComboBox) {
-        print("Out Time Zone modifed to \(outputTz8.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata8.dateValue)")
-    }
-    
-    @IBAction func outputDatedata8Selected(_ sender: NSDatePicker) {
-        print("Out Time Zone modifed to \(outputTz8.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata8.dateValue)")
-    }
-    
-    @IBAction func outputTz9Selected(_ sender: NSComboBox) {
-        print("Out Time Zone modifed to \(outputTz9.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata9.dateValue)")
-    }
-    
-    @IBAction func outputDatedata9Selected(_ sender: NSDatePicker) {
-        print("Out Time Zone modifed to \(outputTz9.stringValue)")
-        print("Output Date or Time modifed to \(outputDatedata9.dateValue)")
-    }
-      
 }
 
 
