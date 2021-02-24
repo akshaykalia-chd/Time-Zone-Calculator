@@ -109,66 +109,499 @@ class ViewController: NSViewController {
     
     @IBAction func combo1Action(_ sender: NSComboBox) {
         saveComboState(comboValue: comboData1.stringValue, comboName: "comboData1")
-        setToNow(timeZoneValue: comboData1.stringValue)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData1.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData1.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData1.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
         }
     @IBAction func combo2Action(_ sender: NSComboBox) {
         saveComboState(comboValue: comboData2.stringValue, comboName: "comboData2")
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData2.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData2.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
+    
     @IBAction func combo3Action(_ sender: NSComboBox) {
         saveComboState(comboValue: comboData3.stringValue, comboName: "comboData3")
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData3.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData3.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func combo4Action(_ sender: NSComboBox) {
         saveComboState(comboValue: comboData4.stringValue, comboName: "comboData4")
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData4.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData4.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func combo5Action(_ sender: NSComboBox) {
         saveComboState(comboValue: comboData5.stringValue, comboName: "comboData5")
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData5.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData5.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func combo6Action(_ sender: NSComboBox) {
         saveComboState(comboValue: comboData6.stringValue, comboName: "comboData6")
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData6.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData6.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func combo7Action(_ sender: NSComboBox) {
         saveComboState(comboValue: comboData7.stringValue, comboName: "comboData7")
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData7.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData7.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func combo8Action(_ sender: NSComboBox) {
         saveComboState(comboValue: comboData8.stringValue, comboName: "comboData8")
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData8.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData8.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func combo9Action(_ sender: NSComboBox) {
         saveComboState(comboValue: comboData9.stringValue, comboName: "comboData9")
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData9.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData9.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func combo10Action(_ sender: NSComboBox) {
         saveComboState(comboValue: comboData10.stringValue, comboName: "comboData10")
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData10.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData10.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func combo11Action(_ sender: NSComboBox) {
         saveComboState(comboValue: comboData11.stringValue, comboName: "comboData11")
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData11.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData11.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func combo12Action(_ sender: NSComboBox) {
         saveComboState(comboValue: comboData12.stringValue, comboName: "comboData12")
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData12.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData12.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     
     //Contorl Actions Datapicker
     @IBAction func datepicker1Action(_ sender: NSDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData1.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData1.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func datepicker2Action(_ sender: NSDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData2.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData2.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func datepicker3Action(_ sender: NSDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData3.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData3.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData3.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func datepicker4Action(_ sender: NSDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData4.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData4.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData4.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func datepicker5Action(_ sender: NSDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData5.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData5.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData5.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func datepicker6Action(_ sender: NSDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData6.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData6.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData6.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func datepicker7Action(_ sender: NSDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData7.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData7.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData7.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func datepicker8Action(_ sender: NSDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData8.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData8.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData8.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func datepicker9Action(_ sender: NSDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData9.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData9.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData9.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func datepicker10Action(_ sender: NSDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData10.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData10.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData10.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func datepicker11Action(_ sender: NSDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData11.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData11.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData11.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData12.dateValue = dateData1.dateValue + Double(utcOffset)
     }
     @IBAction func datepicker12Action(_ sender: NSDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: dateData12.dateValue)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: dateData12.dateValue)) ?? 0
+        let utcOffset = getUtcOffet(timeZoneValue: comboData12.stringValue, dayOfMonth: day, monthNum: month)
+        print(utcOffset)
+        dateData1.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData2.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData3.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData4.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData5.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData6.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData7.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData8.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData9.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData10.dateValue = dateData1.dateValue + Double(utcOffset)
+        dateData11.dateValue = dateData1.dateValue + Double(utcOffset)        
     }
     
 }
