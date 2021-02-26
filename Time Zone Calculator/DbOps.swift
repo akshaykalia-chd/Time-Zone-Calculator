@@ -15,7 +15,7 @@ func openDb() -> OpaquePointer? {
         .appendingPathComponent("tzData.db")
     var db: OpaquePointer?
     if sqlite3_open(dbUrl.path, &db) == SQLITE_OK {
-        print("Successfully opened connection to database at \(dbUrl.path)")
+        //print("Successfully opened connection to database at \(dbUrl.path)")
         return db
     }
     else {
@@ -48,23 +48,23 @@ func query(dbPointer:OpaquePointer, queryStatementString:String) -> [String]{
     // SELECT 'Some Col' FROM 'Some Table' WHERE 'Seom Col' = 'Some val';
     var queryStatement: OpaquePointer?
     if sqlite3_prepare_v2(dbPointer, queryStatementString,  -1, &queryStatement, nil) == SQLITE_OK {
-        //let numCols: Int32 = sqlite3_column_count(queryStatement)
         var outPut: [String] = []
-            //var intermOutput:[String]=[]
             while (sqlite3_step(queryStatement) == SQLITE_ROW) {
                 if let queryResultCol = sqlite3_column_text(queryStatement, 0){
                 outPut.append(String(cString: queryResultCol))
                 }
-                else {print("Query result is nil.")}
+                else {print("Query result is nil.")
+                }
             }
+        sqlite3_finalize(queryStatement)
         return outPut
         }
     else {
     let errorMessage = String(cString: sqlite3_errmsg(dbPointer))
     print("\nQuery is not prepared \(errorMessage)")
     }
-     sqlite3_finalize(queryStatement)
-    return [""]
+sqlite3_finalize(queryStatement)
+return [""]
 }
 
 

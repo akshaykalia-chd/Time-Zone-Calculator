@@ -20,7 +20,7 @@ func timeZoneList() -> [String]{
         let utcOffsetText = query(dbPointer: unwrappeddbHandle, queryStatementString: sqlStatment)
         sqlite3_close(unwrappeddbHandle)
         guard tzIds.count == tzNames.count && tzIds.count == utcOffsetText.count else {
-            print("tzData seems to be broken")
+            //print("tzData seems to be broken")
             return[""]
         }
         for i in tzIds.indices {

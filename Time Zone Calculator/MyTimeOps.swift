@@ -39,46 +39,46 @@ func getUtcOffet(timeZoneValue:String, dayOfMonth:Int, monthNum:Int) -> Int {
         intDstStartMonth = Int(dstStartMonth) ?? 0
         intUtcOffsetDst = Int(utcOffsetDst) ?? 0
     }
-    print("Current Month:\(intCurrentMonth)")
+    /*print("Current Month:\(intCurrentMonth)")
     print("Current Day:\(intCurrentDay)")
     print("DST Start Month:\(intDstStartMonth)")
     print("DST Start Day:\(intDstStartDay)")
     print("DST End Month:\(intDstEndMonth)")
-    print("DST End Day:\(intDstEndDay)")
+    print("DST End Day:\(intDstEndDay)")*/
    
     if intDst == 0{
-        print ("Time Zone does not follow DST returing UTC offset")
+        //print ("Time Zone does not follow DST returing UTC offset")
         return intUtcOffset
         }
     if intDstEndMonth > intDstStartMonth {
         if intCurrentMonth > intDstStartMonth {
-                print ("DST Case Month > Start Month")
+                //print ("DST Case Month > Start Month")
                 return intUtcOffsetDst
         }
         if intCurrentMonth == intDstStartMonth && intCurrentDay >= intDstStartDay{
-            print ("DST Case Month = Start Month and Day >= Start day")
+            //print ("DST Case Month = Start Month and Day >= Start day")
             return intUtcOffsetDst
         }
     }
     if intDstEndMonth < intDstStartMonth {
         if intCurrentMonth > intDstStartMonth {
-                print ("DST Case Next Year End. Month > Start Month")
+                //print ("DST Case Next Year End. Month > Start Month")
                 return intUtcOffsetDst
         }
         if intCurrentMonth == intDstStartMonth && intCurrentDay >= intDstStartDay {
-            print ("DST Case Next Year End. Month = Start Month and day >= Start day")
+            //print ("DST Case Next Year End. Month = Start Month and day >= Start day")
             return intUtcOffsetDst
         }
         if intCurrentMonth < intDstEndMonth {
-            print ("DST Case Next Year End. DST Case Month < End Month ")
+            //print ("DST Case Next Year End. DST Case Month < End Month ")
             return intUtcOffsetDst
         }
         if intCurrentMonth == intDstEndMonth && intCurrentDay <= intDstEndDay{
-            print ("DST Case Next Year End.DST Case Month = End Month and Day <= End Day")
+            //print ("DST Case Next Year End.DST Case Month = End Month and Day <= End Day")
             return intUtcOffsetDst
         }
     }
-print ("No Match -- No DST")
+//print ("No Match -- No DST")
 return intUtcOffset
 }
 
