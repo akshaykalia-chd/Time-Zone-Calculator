@@ -11,7 +11,7 @@
 		44941CBB25DECF92000AE1F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44941CBA25DECF92000AE1F7 /* AppDelegate.swift */; };
 		44941CBD25DECF92000AE1F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44941CBC25DECF92000AE1F7 /* ViewController.swift */; };
 		44941CC025DECF92000AE1F7 /* Time_Zone_Calculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44941CBE25DECF92000AE1F7 /* Time_Zone_Calculator.xcdatamodeld */; };
-		44941CC225DECF94000AE1F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44941CC125DECF94000AE1F7 /* Assets.xcassets */; };
+		44941CC225DECF94000AE1F7 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 44941CC125DECF94000AE1F7 /* Contents.json */; };
 		44941CC525DECF94000AE1F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44941CC325DECF94000AE1F7 /* Main.storyboard */; };
 		44941CD125DECF94000AE1F7 /* Time_Zone_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44941CD025DECF94000AE1F7 /* Time_Zone_CalculatorTests.swift */; };
 		44941CDC25DECF94000AE1F7 /* Time_Zone_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44941CDB25DECF94000AE1F7 /* Time_Zone_CalculatorUITests.swift */; };
@@ -42,7 +42,7 @@
 		44941CBA25DECF92000AE1F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44941CBC25DECF92000AE1F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44941CBF25DECF92000AE1F7 /* Time_Zone_Calculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Time_Zone_Calculator.xcdatamodel; sourceTree = "<group>"; };
-		44941CC125DECF94000AE1F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44941CC125DECF94000AE1F7 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Contents.json; path = Assets.xcassets/Contents.json; sourceTree = "<group>"; };
 		44941CC425DECF94000AE1F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44941CC625DECF94000AE1F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44941CC725DECF94000AE1F7 /* Time_Zone_Calculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Time_Zone_Calculator.entitlements; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				4461971725E0F5BC001E201F /* DbOps.swift */,
 				44DDF62525E432FB004C27C1 /* ComboOps.swift */,
 				44DDF62025E432B9004C27C1 /* MyTimeOps.swift */,
-				44941CC125DECF94000AE1F7 /* Assets.xcassets */,
+				44941CC125DECF94000AE1F7 /* Contents.json */,
 				44941CC325DECF94000AE1F7 /* Main.storyboard */,
 				44941CC625DECF94000AE1F7 /* Info.plist */,
 				44941CC725DECF94000AE1F7 /* Time_Zone_Calculator.entitlements */,
@@ -249,7 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44941CC225DECF94000AE1F7 /* Assets.xcassets in Resources */,
+				44941CC225DECF94000AE1F7 /* Contents.json in Resources */,
 				44941CC525DECF94000AE1F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -433,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
