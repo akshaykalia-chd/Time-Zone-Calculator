@@ -147,6 +147,7 @@ class ViewController: NSViewController {
     //Control Actions ComboBox
     
     @IBAction func combo1Action(_ sender: NSComboBox) {
+        print(comboData1.stringValue)
         saveComboState(comboValue: comboData1.stringValue, comboName: "comboData1")
         let date = dateData1.dateValue
         let dateFormatter = DateFormatter()
@@ -192,6 +193,7 @@ class ViewController: NSViewController {
         
     }
     @IBAction func combo5Action(_ sender: NSComboBox) {
+        
         saveComboState(comboValue: comboData5.stringValue, comboName: "comboData5")
         let date = dateData5.dateValue
         let dateFormatter = DateFormatter()
