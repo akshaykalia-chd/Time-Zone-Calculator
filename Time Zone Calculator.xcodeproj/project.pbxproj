@@ -17,6 +17,7 @@
 		44941CDC25DECF94000AE1F7 /* Time_Zone_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44941CDB25DECF94000AE1F7 /* Time_Zone_CalculatorUITests.swift */; };
 		44DDF62125E432B9004C27C1 /* MyTimeOps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DDF62025E432B9004C27C1 /* MyTimeOps.swift */; };
 		44DDF62625E432FB004C27C1 /* ComboOps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DDF62525E432FB004C27C1 /* ComboOps.swift */; };
+		44FA55AA25EE6BEF00F1CABF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FA55A925EE6BEF00F1CABF /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		44A0190325E0524C000BA0FF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		44DDF62025E432B9004C27C1 /* MyTimeOps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimeOps.swift; sourceTree = "<group>"; };
 		44DDF62525E432FB004C27C1 /* ComboOps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComboOps.swift; sourceTree = "<group>"; };
+		44FA55A925EE6BEF00F1CABF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				44941CC625DECF94000AE1F7 /* Info.plist */,
 				44941CC725DECF94000AE1F7 /* Time_Zone_Calculator.entitlements */,
 				44941CBE25DECF92000AE1F7 /* Time_Zone_Calculator.xcdatamodeld */,
+				44FA55A925EE6BEF00F1CABF /* Media.xcassets */,
 			);
 			path = "Time Zone Calculator";
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44941CC225DECF94000AE1F7 /* Contents.json in Resources */,
+				44FA55AA25EE6BEF00F1CABF /* Media.xcassets in Resources */,
 				44941CC525DECF94000AE1F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
