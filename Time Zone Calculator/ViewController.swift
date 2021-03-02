@@ -284,6 +284,24 @@ class ViewController: NSViewController {
     //Contorl Actions Datapicker
     @IBAction func datepicker1Action(_ sender: NSDatePicker) {
         let date = dateData1.dateValue
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: date)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: date)) ?? 0
+        dateData1.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData1.stringValue, dayOfMonth: day, monthNum: month))
+        dateData2.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month))
+        dateData3.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData3.stringValue, dayOfMonth: day, monthNum: month))
+        dateData4.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData4.stringValue, dayOfMonth: day, monthNum: month))
+        dateData5.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData5.stringValue, dayOfMonth: day, monthNum: month))
+        dateData6.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData6.stringValue, dayOfMonth: day, monthNum: month))
+        dateData7.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData7.stringValue, dayOfMonth: day, monthNum: month))
+        dateData8.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData8.stringValue, dayOfMonth: day, monthNum: month))
+        dateData9.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData9.stringValue, dayOfMonth: day, monthNum: month))
+        dateData10.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData10.stringValue, dayOfMonth: day, monthNum: month))
+        dateData11.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData11.stringValue, dayOfMonth: day, monthNum: month))
+        dateData12.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData12.stringValue, dayOfMonth: day, monthNum: month))
+        
         dateData2.dateValue = date
         dateData3.dateValue = date
         dateData4.dateValue = date
@@ -300,6 +318,24 @@ class ViewController: NSViewController {
     }
     @IBAction func datepicker2Action(_ sender: NSDatePicker) {
         let date = dateData2.dateValue
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: date)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: date)) ?? 0
+        dateData1.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData1.stringValue, dayOfMonth: day, monthNum: month))
+        dateData2.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month))
+        dateData3.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData3.stringValue, dayOfMonth: day, monthNum: month))
+        dateData4.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData4.stringValue, dayOfMonth: day, monthNum: month))
+        dateData5.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData5.stringValue, dayOfMonth: day, monthNum: month))
+        dateData6.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData6.stringValue, dayOfMonth: day, monthNum: month))
+        dateData7.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData7.stringValue, dayOfMonth: day, monthNum: month))
+        dateData8.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData8.stringValue, dayOfMonth: day, monthNum: month))
+        dateData9.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData9.stringValue, dayOfMonth: day, monthNum: month))
+        dateData10.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData10.stringValue, dayOfMonth: day, monthNum: month))
+        dateData11.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData11.stringValue, dayOfMonth: day, monthNum: month))
+        dateData12.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData12.stringValue, dayOfMonth: day, monthNum: month))
+        
         dateData1.dateValue = date
         dateData3.dateValue = date
         dateData4.dateValue = date
@@ -315,6 +351,24 @@ class ViewController: NSViewController {
     }
     @IBAction func datepicker3Action(_ sender: NSDatePicker) {
         let date = dateData3.dateValue
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: date)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: date)) ?? 0
+        dateData1.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData1.stringValue, dayOfMonth: day, monthNum: month))
+        dateData2.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month))
+        dateData3.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData3.stringValue, dayOfMonth: day, monthNum: month))
+        dateData4.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData4.stringValue, dayOfMonth: day, monthNum: month))
+        dateData5.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData5.stringValue, dayOfMonth: day, monthNum: month))
+        dateData6.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData6.stringValue, dayOfMonth: day, monthNum: month))
+        dateData7.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData7.stringValue, dayOfMonth: day, monthNum: month))
+        dateData8.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData8.stringValue, dayOfMonth: day, monthNum: month))
+        dateData9.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData9.stringValue, dayOfMonth: day, monthNum: month))
+        dateData10.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData10.stringValue, dayOfMonth: day, monthNum: month))
+        dateData11.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData11.stringValue, dayOfMonth: day, monthNum: month))
+        dateData12.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData12.stringValue, dayOfMonth: day, monthNum: month))
+        
         dateData1.dateValue = date
         dateData2.dateValue = date
         dateData4.dateValue = date
@@ -330,6 +384,24 @@ class ViewController: NSViewController {
     }
     @IBAction func datepicker4Action(_ sender: NSDatePicker) {
         let date = dateData4.dateValue
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: date)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: date)) ?? 0
+        dateData1.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData1.stringValue, dayOfMonth: day, monthNum: month))
+        dateData2.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month))
+        dateData3.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData3.stringValue, dayOfMonth: day, monthNum: month))
+        dateData4.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData4.stringValue, dayOfMonth: day, monthNum: month))
+        dateData5.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData5.stringValue, dayOfMonth: day, monthNum: month))
+        dateData6.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData6.stringValue, dayOfMonth: day, monthNum: month))
+        dateData7.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData7.stringValue, dayOfMonth: day, monthNum: month))
+        dateData8.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData8.stringValue, dayOfMonth: day, monthNum: month))
+        dateData9.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData9.stringValue, dayOfMonth: day, monthNum: month))
+        dateData10.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData10.stringValue, dayOfMonth: day, monthNum: month))
+        dateData11.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData11.stringValue, dayOfMonth: day, monthNum: month))
+        dateData12.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData12.stringValue, dayOfMonth: day, monthNum: month))
+        
         dateData1.dateValue = date
         dateData2.dateValue = date
         dateData3.dateValue = date
@@ -345,6 +417,24 @@ class ViewController: NSViewController {
     }
     @IBAction func datepicker5Action(_ sender: NSDatePicker) {
         let date = dateData5.dateValue
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: date)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: date)) ?? 0
+        dateData1.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData1.stringValue, dayOfMonth: day, monthNum: month))
+        dateData2.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month))
+        dateData3.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData3.stringValue, dayOfMonth: day, monthNum: month))
+        dateData4.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData4.stringValue, dayOfMonth: day, monthNum: month))
+        dateData5.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData5.stringValue, dayOfMonth: day, monthNum: month))
+        dateData6.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData6.stringValue, dayOfMonth: day, monthNum: month))
+        dateData7.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData7.stringValue, dayOfMonth: day, monthNum: month))
+        dateData8.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData8.stringValue, dayOfMonth: day, monthNum: month))
+        dateData9.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData9.stringValue, dayOfMonth: day, monthNum: month))
+        dateData10.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData10.stringValue, dayOfMonth: day, monthNum: month))
+        dateData11.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData11.stringValue, dayOfMonth: day, monthNum: month))
+        dateData12.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData12.stringValue, dayOfMonth: day, monthNum: month))
+        
         dateData1.dateValue = date
         dateData2.dateValue = date
         dateData3.dateValue = date
@@ -360,6 +450,24 @@ class ViewController: NSViewController {
     }
     @IBAction func datepicker6Action(_ sender: NSDatePicker) {
         let date = dateData6.dateValue
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: date)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: date)) ?? 0
+        dateData1.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData1.stringValue, dayOfMonth: day, monthNum: month))
+        dateData2.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month))
+        dateData3.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData3.stringValue, dayOfMonth: day, monthNum: month))
+        dateData4.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData4.stringValue, dayOfMonth: day, monthNum: month))
+        dateData5.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData5.stringValue, dayOfMonth: day, monthNum: month))
+        dateData6.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData6.stringValue, dayOfMonth: day, monthNum: month))
+        dateData7.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData7.stringValue, dayOfMonth: day, monthNum: month))
+        dateData8.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData8.stringValue, dayOfMonth: day, monthNum: month))
+        dateData9.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData9.stringValue, dayOfMonth: day, monthNum: month))
+        dateData10.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData10.stringValue, dayOfMonth: day, monthNum: month))
+        dateData11.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData11.stringValue, dayOfMonth: day, monthNum: month))
+        dateData12.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData12.stringValue, dayOfMonth: day, monthNum: month))
+        
         dateData1.dateValue = date
         dateData2.dateValue = date
         dateData3.dateValue = date
@@ -375,6 +483,24 @@ class ViewController: NSViewController {
     }
     @IBAction func datepicker7Action(_ sender: NSDatePicker) {
         let date = dateData7.dateValue
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: date)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: date)) ?? 0
+        dateData1.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData1.stringValue, dayOfMonth: day, monthNum: month))
+        dateData2.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month))
+        dateData3.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData3.stringValue, dayOfMonth: day, monthNum: month))
+        dateData4.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData4.stringValue, dayOfMonth: day, monthNum: month))
+        dateData5.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData5.stringValue, dayOfMonth: day, monthNum: month))
+        dateData6.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData6.stringValue, dayOfMonth: day, monthNum: month))
+        dateData7.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData7.stringValue, dayOfMonth: day, monthNum: month))
+        dateData8.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData8.stringValue, dayOfMonth: day, monthNum: month))
+        dateData9.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData9.stringValue, dayOfMonth: day, monthNum: month))
+        dateData10.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData10.stringValue, dayOfMonth: day, monthNum: month))
+        dateData11.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData11.stringValue, dayOfMonth: day, monthNum: month))
+        dateData12.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData12.stringValue, dayOfMonth: day, monthNum: month))
+        
         dateData1.dateValue = date
         dateData2.dateValue = date
         dateData3.dateValue = date
@@ -390,6 +516,24 @@ class ViewController: NSViewController {
     }
     @IBAction func datepicker8Action(_ sender: NSDatePicker) {
         let date = dateData8.dateValue
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: date)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: date)) ?? 0
+        dateData1.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData1.stringValue, dayOfMonth: day, monthNum: month))
+        dateData2.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month))
+        dateData3.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData3.stringValue, dayOfMonth: day, monthNum: month))
+        dateData4.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData4.stringValue, dayOfMonth: day, monthNum: month))
+        dateData5.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData5.stringValue, dayOfMonth: day, monthNum: month))
+        dateData6.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData6.stringValue, dayOfMonth: day, monthNum: month))
+        dateData7.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData7.stringValue, dayOfMonth: day, monthNum: month))
+        dateData8.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData8.stringValue, dayOfMonth: day, monthNum: month))
+        dateData9.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData9.stringValue, dayOfMonth: day, monthNum: month))
+        dateData10.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData10.stringValue, dayOfMonth: day, monthNum: month))
+        dateData11.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData11.stringValue, dayOfMonth: day, monthNum: month))
+        dateData12.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData12.stringValue, dayOfMonth: day, monthNum: month))
+        
         dateData1.dateValue = date
         dateData2.dateValue = date
         dateData3.dateValue = date
@@ -405,6 +549,24 @@ class ViewController: NSViewController {
     }
     @IBAction func datepicker9Action(_ sender: NSDatePicker) {
         let date = dateData9.dateValue
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: date)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: date)) ?? 0
+        dateData1.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData1.stringValue, dayOfMonth: day, monthNum: month))
+        dateData2.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month))
+        dateData3.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData3.stringValue, dayOfMonth: day, monthNum: month))
+        dateData4.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData4.stringValue, dayOfMonth: day, monthNum: month))
+        dateData5.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData5.stringValue, dayOfMonth: day, monthNum: month))
+        dateData6.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData6.stringValue, dayOfMonth: day, monthNum: month))
+        dateData7.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData7.stringValue, dayOfMonth: day, monthNum: month))
+        dateData8.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData8.stringValue, dayOfMonth: day, monthNum: month))
+        dateData9.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData9.stringValue, dayOfMonth: day, monthNum: month))
+        dateData10.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData10.stringValue, dayOfMonth: day, monthNum: month))
+        dateData11.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData11.stringValue, dayOfMonth: day, monthNum: month))
+        dateData12.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData12.stringValue, dayOfMonth: day, monthNum: month))
+        
         dateData1.dateValue = date
         dateData2.dateValue = date
         dateData3.dateValue = date
@@ -421,6 +583,24 @@ class ViewController: NSViewController {
     }
     @IBAction func datepicker10Action(_ sender: NSDatePicker) {
         let date = dateData10.dateValue
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: date)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: date)) ?? 0
+        dateData1.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData1.stringValue, dayOfMonth: day, monthNum: month))
+        dateData2.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month))
+        dateData3.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData3.stringValue, dayOfMonth: day, monthNum: month))
+        dateData4.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData4.stringValue, dayOfMonth: day, monthNum: month))
+        dateData5.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData5.stringValue, dayOfMonth: day, monthNum: month))
+        dateData6.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData6.stringValue, dayOfMonth: day, monthNum: month))
+        dateData7.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData7.stringValue, dayOfMonth: day, monthNum: month))
+        dateData8.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData8.stringValue, dayOfMonth: day, monthNum: month))
+        dateData9.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData9.stringValue, dayOfMonth: day, monthNum: month))
+        dateData10.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData10.stringValue, dayOfMonth: day, monthNum: month))
+        dateData11.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData11.stringValue, dayOfMonth: day, monthNum: month))
+        dateData12.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData12.stringValue, dayOfMonth: day, monthNum: month))
+        
         dateData1.dateValue = date
         dateData2.dateValue = date
         dateData3.dateValue = date
@@ -437,6 +617,24 @@ class ViewController: NSViewController {
     }
     @IBAction func datepicker11Action(_ sender: NSDatePicker) {
         let date = dateData11.dateValue
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: date)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: date)) ?? 0
+        dateData1.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData1.stringValue, dayOfMonth: day, monthNum: month))
+        dateData2.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month))
+        dateData3.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData3.stringValue, dayOfMonth: day, monthNum: month))
+        dateData4.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData4.stringValue, dayOfMonth: day, monthNum: month))
+        dateData5.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData5.stringValue, dayOfMonth: day, monthNum: month))
+        dateData6.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData6.stringValue, dayOfMonth: day, monthNum: month))
+        dateData7.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData7.stringValue, dayOfMonth: day, monthNum: month))
+        dateData8.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData8.stringValue, dayOfMonth: day, monthNum: month))
+        dateData9.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData9.stringValue, dayOfMonth: day, monthNum: month))
+        dateData10.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData10.stringValue, dayOfMonth: day, monthNum: month))
+        dateData11.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData11.stringValue, dayOfMonth: day, monthNum: month))
+        dateData12.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData12.stringValue, dayOfMonth: day, monthNum: month))
+        
         dateData1.dateValue = date
         dateData2.dateValue = date
         dateData3.dateValue = date
@@ -453,6 +651,24 @@ class ViewController: NSViewController {
     }
     @IBAction func datepicker12Action(_ sender: NSDatePicker) {
         let date = dateData12.dateValue
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d"
+        let day = Int(dateFormatter.string(from: date)) ?? 0
+        dateFormatter.dateFormat = "M"
+        let month = Int(dateFormatter.string(from: date)) ?? 0
+        dateData1.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData1.stringValue, dayOfMonth: day, monthNum: month))
+        dateData2.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData2.stringValue, dayOfMonth: day, monthNum: month))
+        dateData3.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData3.stringValue, dayOfMonth: day, monthNum: month))
+        dateData4.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData4.stringValue, dayOfMonth: day, monthNum: month))
+        dateData5.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData5.stringValue, dayOfMonth: day, monthNum: month))
+        dateData6.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData6.stringValue, dayOfMonth: day, monthNum: month))
+        dateData7.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData7.stringValue, dayOfMonth: day, monthNum: month))
+        dateData8.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData8.stringValue, dayOfMonth: day, monthNum: month))
+        dateData9.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData9.stringValue, dayOfMonth: day, monthNum: month))
+        dateData10.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData10.stringValue, dayOfMonth: day, monthNum: month))
+        dateData11.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData11.stringValue, dayOfMonth: day, monthNum: month))
+        dateData12.timeZone = TimeZone(secondsFromGMT:getUtcOffet(timeZoneValue: comboData12.stringValue, dayOfMonth: day, monthNum: month))
+        
         dateData1.dateValue = date
         dateData2.dateValue = date
         dateData3.dateValue = date
