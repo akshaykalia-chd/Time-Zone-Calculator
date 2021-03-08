@@ -9,6 +9,7 @@ import Cocoa
 import Foundation
 import SQLite3
 
+
 class ViewController: NSViewController {
     
     private var comboBoxData = timeZoneList()
@@ -46,6 +47,8 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //test_getUTCoffset()
+        
         let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "d"

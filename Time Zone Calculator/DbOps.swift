@@ -9,6 +9,16 @@ import Foundation
 import SQLite3
 import Cocoa
 
+func getDBurl() -> URL {
+    let mainBundle = Bundle.main
+    //let dbPath = mainBundle.path(forResource: "tzData", ofType: "db")
+    let dbPath = mainBundle.url(forResource: "tzData", withExtension: "db")
+    if let path = dbPath{
+        return path
+    }
+    return mainBundle.bundleURL
+}
+
 func openDb() -> OpaquePointer? {
     let dbUrl = try! FileManager.default
         .url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)

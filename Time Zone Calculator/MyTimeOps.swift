@@ -87,13 +87,24 @@ return intUtcOffset
 }
 
 
-
-
-
-
-
-
-
+func test_getUTCoffset() {
+    let timeZones = timeZoneList()
+    for timeZone in timeZones {
+        
+        for month in 1...12{
+            for day in 1...31{
+                var output = String(timeZone)
+                output += "," + String(month) + "," + String(day)
+                let utcOffset = getUtcOffet(timeZoneValue: timeZone, dayOfMonth: day, monthNum: month)
+                output += "," + String(utcOffset)
+                print(output)
+            }
+            
+        }
+        
+    }
+        
+}
 
 
 
