@@ -15,6 +15,7 @@ func getDBurl() -> URL {
     let dbPath = mainBundle.url(forResource: "tzData", withExtension: "db")
     if let path = dbPath{
         return path
+        
     }
     return mainBundle.bundleURL
 }
@@ -24,10 +25,14 @@ func openDb() -> OpaquePointer? {
         .url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         .appendingPathComponent("tzData.db")
     var db: OpaquePointer?
-    if sqlite3_open(dbUrl.path, &db) == SQLITE_OK {
+    if sqlite3_open(dbUrl.path, &db) == SQLITE_OK  {
         //print("Successfully opened connection to database at \(dbUrl.path)")
         return db
     }
+    /*if sqlite3_open(dbUrl.path, &db) == SQLITE_OK {
+        //print("Successfully opened connection to database at \(dbUrl.path)")
+        return db
+    }*/
     else {
         print("error opening database")
         sqlite3_close(db)
