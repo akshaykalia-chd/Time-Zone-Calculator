@@ -1,7 +1,7 @@
 # Time-Zone-Calculator
 A simple No frills Time Zone calculator for MAC
-Covers 43 Time Zones listed below with DST considerations
-When No time zone is selected for the clock it defaults to UTC+0
+Covers 43 Time Zones listed below with DST considerations. 
+When No time zone is selected for the clock it defaults to UTC+0.
 
 HST
 AKST
