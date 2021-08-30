@@ -70,12 +70,12 @@
                     <window key="window" title="Time Zone Calculator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="276" y="357" width="1150" height="441"/>
+                        <rect key="contentRect" x="63" y="663" width="1150" height="302"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <value key="minSize" type="size" width="1150" height="441"/>
-                        <value key="maxSize" type="size" width="1150" height="441"/>
-                        <value key="minFullScreenContentSize" type="size" width="1150" height="441"/>
-                        <value key="maxFullScreenContentSize" type="size" width="1150" height="441"/>
+                        <value key="minSize" type="size" width="1150" height="302"/>
+                        <value key="maxSize" type="size" width="1150" height="302"/>
+                        <value key="minFullScreenContentSize" type="size" width="1150" height="302"/>
+                        <value key="maxFullScreenContentSize" type="size" width="1150" height="302"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -86,19 +86,19 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="118" y="-1256"/>
+            <point key="canvasLocation" x="118" y="-1325.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Time_Zone_Calculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="1150" height="441"/>
+                    <view key="view" focusRingType="exterior" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="1150" height="302"/>
                         <subviews>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sx3-g3-b4D">
-                                <rect key="frame" x="15" y="366" width="351" height="25"/>
+                            <comboBox focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sx3-g3-b4D">
+                                <rect key="frame" x="4" y="227" width="375" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="4HI-QM-mlX">
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="exterior" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="4HI-QM-mlX">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -108,13 +108,13 @@
                                 </connections>
                             </comboBox>
                             <box verticalHuggingPriority="750" boxType="separator" id="9px-4h-547">
-                                <rect key="frame" x="-1" y="316" width="1150" height="5"/>
+                                <rect key="frame" x="0.0" y="194" width="1150" height="5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                             </box>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f8m-0o-Nxv">
-                                <rect key="frame" x="15" y="268" width="351" height="25"/>
+                            <comboBox focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f8m-0o-Nxv">
+                                <rect key="frame" x="4" y="165" width="375" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="PaE-ex-xGJ">
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="exterior" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="PaE-ex-xGJ">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -123,13 +123,13 @@
                                     <action selector="combo4Action:" target="XfG-lQ-9wD" id="KfY-2c-yeX"/>
                                 </connections>
                             </comboBox>
-                            <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u8D-ca-Mei">
-                                <rect key="frame" x="59" y="239" width="278" height="28"/>
+                            <datePicker focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u8D-ca-Mei">
+                                <rect key="frame" x="89" y="144" width="205" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="joY-CS-qKT">
+                                <datePickerCell key="cell" borderStyle="bezel" focusRingType="exterior" alignment="left" useCurrentDate="YES" id="joY-CS-qKT">
                                     <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="652009000.38972104">
-                                        <!--2021-08-30 09:36:40 +0000-->
+                                    <date key="date" timeIntervalSinceReferenceDate="652031308.34260905">
+                                        <!--2021-08-30 15:48:28 +0000-->
                                     </date>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -139,10 +139,10 @@
                                     <action selector="datepicker4Action:" target="XfG-lQ-9wD" id="NjN-aj-HpI"/>
                                 </connections>
                             </datePicker>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsY-Jn-p9y">
-                                <rect key="frame" x="400" y="268" width="351" height="25"/>
+                            <comboBox focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsY-Jn-p9y">
+                                <rect key="frame" x="391" y="166" width="375" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="rcN-Yj-wad">
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="exterior" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="rcN-Yj-wad">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -151,13 +151,13 @@
                                     <action selector="combo5Action:" target="XfG-lQ-9wD" id="fjZ-Mj-M1X"/>
                                 </connections>
                             </comboBox>
-                            <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JBY-Dn-zVo">
-                                <rect key="frame" x="441" y="240" width="277" height="28"/>
+                            <datePicker focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JBY-Dn-zVo">
+                                <rect key="frame" x="474" y="144" width="205" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="XdT-99-7DR">
+                                <datePickerCell key="cell" borderStyle="bezel" focusRingType="exterior" alignment="left" useCurrentDate="YES" id="XdT-99-7DR">
                                     <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="652009000.39891005">
-                                        <!--2021-08-30 09:36:40 +0000-->
+                                    <date key="date" timeIntervalSinceReferenceDate="652031308.351933">
+                                        <!--2021-08-30 15:48:28 +0000-->
                                     </date>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -167,10 +167,10 @@
                                     <action selector="datepicker5Action:" target="XfG-lQ-9wD" id="get-3B-LXj"/>
                                 </connections>
                             </datePicker>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AJh-Aw-4EX">
-                                <rect key="frame" x="791" y="268" width="351" height="25"/>
+                            <comboBox focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AJh-Aw-4EX">
+                                <rect key="frame" x="776" y="166" width="375" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="OlW-IK-Zvy">
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="exterior" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="OlW-IK-Zvy">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -179,13 +179,13 @@
                                     <action selector="combo6Action:" target="XfG-lQ-9wD" id="oww-mm-bfK"/>
                                 </connections>
                             </comboBox>
-                            <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ol-RP-Nj3">
-                                <rect key="frame" x="831" y="239" width="277" height="28"/>
+                            <datePicker focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ol-RP-Nj3">
+                                <rect key="frame" x="861" y="144" width="205" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="wQF-L5-E5Y">
+                                <datePickerCell key="cell" borderStyle="bezel" focusRingType="exterior" alignment="left" useCurrentDate="YES" id="wQF-L5-E5Y">
                                     <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="652009000.408126">
-                                        <!--2021-08-30 09:36:40 +0000-->
+                                    <date key="date" timeIntervalSinceReferenceDate="652031308.361377">
+                                        <!--2021-08-30 15:48:28 +0000-->
                                     </date>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -196,16 +196,16 @@
                                 </connections>
                             </datePicker>
                             <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="CUf-fk-fCY">
-                                <rect key="frame" x="0.0" y="210" width="1150" height="5"/>
+                                <rect key="frame" x="0.0" y="131" width="1150" height="5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </box>
-                            <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3OO-2n-Ocs">
-                                <rect key="frame" x="59" y="135" width="278" height="28"/>
+                            <datePicker focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3OO-2n-Ocs">
+                                <rect key="frame" x="89" y="83" width="205" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="uUT-cg-RDx">
+                                <datePickerCell key="cell" borderStyle="bezel" focusRingType="exterior" alignment="left" useCurrentDate="YES" id="uUT-cg-RDx">
                                     <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="652009000.41776597">
-                                        <!--2021-08-30 09:36:40 +0000-->
+                                    <date key="date" timeIntervalSinceReferenceDate="652031308.36515796">
+                                        <!--2021-08-30 15:48:28 +0000-->
                                     </date>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -215,10 +215,10 @@
                                     <action selector="datepicker7Action:" target="XfG-lQ-9wD" id="Eft-8q-7GF"/>
                                 </connections>
                             </datePicker>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agc-rp-f1C">
-                                <rect key="frame" x="400" y="163" width="351" height="25"/>
+                            <comboBox focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agc-rp-f1C">
+                                <rect key="frame" x="391" y="104" width="375" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="anP-6X-X56">
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="exterior" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="anP-6X-X56">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -227,13 +227,13 @@
                                     <action selector="combo8Action:" target="XfG-lQ-9wD" id="jhJ-FN-pjh"/>
                                 </connections>
                             </comboBox>
-                            <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdn-C2-9y4">
-                                <rect key="frame" x="440" y="135" width="278" height="28"/>
+                            <datePicker focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdn-C2-9y4">
+                                <rect key="frame" x="474" y="83" width="205" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="sNq-Gr-MPl">
+                                <datePickerCell key="cell" borderStyle="bezel" focusRingType="exterior" alignment="left" useCurrentDate="YES" id="sNq-Gr-MPl">
                                     <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="652009000.42622697">
-                                        <!--2021-08-30 09:36:40 +0000-->
+                                    <date key="date" timeIntervalSinceReferenceDate="652031308.37529695">
+                                        <!--2021-08-30 15:48:28 +0000-->
                                     </date>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -243,10 +243,10 @@
                                     <action selector="datepicker8Action:" target="XfG-lQ-9wD" id="to3-qm-KGi"/>
                                 </connections>
                             </datePicker>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0op-pp-OPh">
-                                <rect key="frame" x="791" y="163" width="351" height="25"/>
+                            <comboBox focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0op-pp-OPh">
+                                <rect key="frame" x="776" y="104" width="375" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="znT-0k-xMo">
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="exterior" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="znT-0k-xMo">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -255,13 +255,13 @@
                                     <action selector="combo9Action:" target="XfG-lQ-9wD" id="aTL-2o-Ofq"/>
                                 </connections>
                             </comboBox>
-                            <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yAN-Lj-xQt">
-                                <rect key="frame" x="831" y="135" width="277" height="28"/>
+                            <datePicker focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yAN-Lj-xQt">
+                                <rect key="frame" x="861" y="83" width="205" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="L5f-61-XpH">
+                                <datePickerCell key="cell" borderStyle="bezel" focusRingType="exterior" alignment="left" useCurrentDate="YES" id="L5f-61-XpH">
                                     <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="652009000.43397701">
-                                        <!--2021-08-30 09:36:40 +0000-->
+                                    <date key="date" timeIntervalSinceReferenceDate="652031308.38505495">
+                                        <!--2021-08-30 15:48:28 +0000-->
                                     </date>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -272,13 +272,13 @@
                                 </connections>
                             </datePicker>
                             <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="sR1-pn-Xl5">
-                                <rect key="frame" x="0.0" y="94" width="1150" height="5"/>
+                                <rect key="frame" x="0.0" y="68" width="1150" height="5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </box>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b3i-8Q-33h">
-                                <rect key="frame" x="15" y="59" width="351" height="25"/>
+                            <comboBox focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b3i-8Q-33h">
+                                <rect key="frame" x="4" y="41" width="375" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="mhd-vi-OJl">
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="exterior" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="mhd-vi-OJl">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -287,13 +287,13 @@
                                     <action selector="combo10Action:" target="XfG-lQ-9wD" id="lHS-Rn-KFN"/>
                                 </connections>
                             </comboBox>
-                            <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8u-Cf-M1G">
-                                <rect key="frame" x="59" y="33" width="278" height="28"/>
+                            <datePicker focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8u-Cf-M1G">
+                                <rect key="frame" x="89" y="20" width="205" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="9Mb-Rk-N1u">
+                                <datePickerCell key="cell" borderStyle="bezel" focusRingType="exterior" alignment="left" useCurrentDate="YES" id="9Mb-Rk-N1u">
                                     <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="652009000.44231999">
-                                        <!--2021-08-30 09:36:40 +0000-->
+                                    <date key="date" timeIntervalSinceReferenceDate="652031308.39494503">
+                                        <!--2021-08-30 15:48:28 +0000-->
                                     </date>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -303,10 +303,10 @@
                                     <action selector="datepicker10Action:" target="XfG-lQ-9wD" id="m7r-G8-54T"/>
                                 </connections>
                             </datePicker>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2T-Pw-xWV">
-                                <rect key="frame" x="400" y="59" width="351" height="25"/>
+                            <comboBox focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2T-Pw-xWV">
+                                <rect key="frame" x="391" y="41" width="375" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="EoJ-df-WYs">
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="exterior" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="EoJ-df-WYs">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -315,13 +315,13 @@
                                     <action selector="combo11Action:" target="XfG-lQ-9wD" id="WKD-z2-M0I"/>
                                 </connections>
                             </comboBox>
-                            <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AkV-Ry-Yi8">
-                                <rect key="frame" x="440" y="33" width="278" height="28"/>
+                            <datePicker focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AkV-Ry-Yi8">
+                                <rect key="frame" x="474" y="20" width="205" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="pjo-Vn-GVs">
+                                <datePickerCell key="cell" borderStyle="bezel" focusRingType="exterior" alignment="left" useCurrentDate="YES" id="pjo-Vn-GVs">
                                     <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="652009000.45029294">
-                                        <!--2021-08-30 09:36:40 +0000-->
+                                    <date key="date" timeIntervalSinceReferenceDate="652031308.40441096">
+                                        <!--2021-08-30 15:48:28 +0000-->
                                     </date>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -331,10 +331,10 @@
                                     <action selector="datepicker11Action:" target="XfG-lQ-9wD" id="Xsj-2F-7A4"/>
                                 </connections>
                             </datePicker>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lk4-FD-ma2">
-                                <rect key="frame" x="791" y="59" width="351" height="25"/>
+                            <comboBox focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lk4-FD-ma2">
+                                <rect key="frame" x="776" y="41" width="375" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="Stf-66-fJp">
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="exterior" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="Stf-66-fJp">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -343,13 +343,13 @@
                                     <action selector="combo12Action:" target="XfG-lQ-9wD" id="I7d-jr-JUw"/>
                                 </connections>
                             </comboBox>
-                            <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bXP-tQ-gHQ">
-                                <rect key="frame" x="831" y="31" width="277" height="28"/>
+                            <datePicker focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bXP-tQ-gHQ">
+                                <rect key="frame" x="861" y="20" width="205" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="EuM-5n-L31">
+                                <datePickerCell key="cell" borderStyle="bezel" focusRingType="exterior" alignment="left" useCurrentDate="YES" id="EuM-5n-L31">
                                     <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="652009000.45820498">
-                                        <!--2021-08-30 09:36:40 +0000-->
+                                    <date key="date" timeIntervalSinceReferenceDate="652031308.41387606">
+                                        <!--2021-08-30 15:48:28 +0000-->
                                     </date>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -359,24 +359,8 @@
                                     <action selector="datepicker12Action:" target="XfG-lQ-9wD" id="0ij-AW-TaJ"/>
                                 </connections>
                             </datePicker>
-                            <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5I-QY-juI">
-                                <rect key="frame" x="59" y="338" width="278" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <datePickerCell key="cell" state="on" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="uEW-Af-D30">
-                                    <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="652009000.46123397">
-                                        <!--2021-08-30 09:36:40 +0000-->
-                                    </date>
-                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <datePickerElements key="datePickerElements" year="YES" month="YES" day="YES" hour="YES" minute="YES" second="YES"/>
-                                </datePickerCell>
-                                <connections>
-                                    <action selector="datepicker1Action:" target="XfG-lQ-9wD" id="8tJ-2x-MT2"/>
-                                </connections>
-                            </datePicker>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KzC-fo-p07">
-                                <rect key="frame" x="508" y="408" width="134" height="16"/>
+                                <rect key="frame" x="508" y="269" width="134" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Time Zone Calculator" id="5D2-py-x4H">
                                     <font key="font" metaFont="system"/>
@@ -384,10 +368,10 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h8k-7R-vNy">
-                                <rect key="frame" x="404" y="366" width="351" height="25"/>
+                            <comboBox focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h8k-7R-vNy">
+                                <rect key="frame" x="391" y="227" width="375" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="bkc-kT-vmu">
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="exterior" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="bkc-kT-vmu">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -396,10 +380,10 @@
                                     <action selector="combo2Action:" target="XfG-lQ-9wD" id="1gK-fe-fPe"/>
                                 </connections>
                             </comboBox>
-                            <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gq-TL-QPv">
-                                <rect key="frame" x="441" y="338" width="277" height="28"/>
+                            <datePicker focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gq-TL-QPv">
+                                <rect key="frame" x="474" y="205" width="205" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="ads-xc-WPY">
+                                <datePickerCell key="cell" borderStyle="bezel" focusRingType="exterior" alignment="left" id="ads-xc-WPY">
                                     <font key="font" metaFont="system"/>
                                     <date key="date" timeIntervalSinceReferenceDate="0.0">
                                         <!--2001-01-01 00:00:00 +0000-->
@@ -412,10 +396,10 @@
                                     <action selector="datepicker2Action:" target="XfG-lQ-9wD" id="GSZ-dE-sgh"/>
                                 </connections>
                             </datePicker>
-                            <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UF6-v5-kPg">
-                                <rect key="frame" x="831" y="338" width="277" height="28"/>
+                            <datePicker focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UF6-v5-kPg">
+                                <rect key="frame" x="861" y="205" width="205" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="oKy-CP-83o">
+                                <datePickerCell key="cell" borderStyle="bezel" focusRingType="exterior" alignment="left" id="oKy-CP-83o">
                                     <font key="font" metaFont="system"/>
                                     <date key="date" timeIntervalSinceReferenceDate="0.0">
                                         <!--2001-01-01 00:00:00 +0000-->
@@ -428,10 +412,10 @@
                                     <action selector="datepicker3Action:" target="XfG-lQ-9wD" id="CLn-kq-gsq"/>
                                 </connections>
                             </datePicker>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="riq-8U-Lsv">
-                                <rect key="frame" x="791" y="366" width="351" height="25"/>
+                            <comboBox focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="riq-8U-Lsv">
+                                <rect key="frame" x="776" y="227" width="375" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="oKv-r0-pgq">
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="exterior" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="oKv-r0-pgq">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -440,10 +424,10 @@
                                     <action selector="combo3Action:" target="XfG-lQ-9wD" id="F2E-4c-gV9"/>
                                 </connections>
                             </comboBox>
-                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djU-OD-VcE">
-                                <rect key="frame" x="15" y="163" width="351" height="25"/>
+                            <comboBox focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djU-OD-VcE">
+                                <rect key="frame" x="4" y="104" width="375" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="h48-ko-G3X">
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" focusRingType="exterior" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="15" id="h48-ko-G3X">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -452,11 +436,35 @@
                                     <action selector="combo7Action:" target="XfG-lQ-9wD" id="vZF-wp-xWB"/>
                                 </connections>
                             </comboBox>
+                            <box horizontalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="XC2-vW-6qk">
+                                <rect key="frame" x="380" y="0.0" width="5" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </box>
+                            <box horizontalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="D0h-Gn-jI7">
+                                <rect key="frame" x="769" y="-1" width="5" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </box>
+                            <datePicker focusRingType="exterior" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5I-QY-juI">
+                                <rect key="frame" x="89" y="205" width="205" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <datePickerCell key="cell" state="on" borderStyle="bezel" focusRingType="exterior" alignment="left" useCurrentDate="YES" id="uEW-Af-D30">
+                                    <font key="font" metaFont="system"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="652031308.417521">
+                                        <!--2021-08-30 15:48:28 +0000-->
+                                    </date>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <datePickerElements key="datePickerElements" year="YES" month="YES" day="YES" hour="YES" minute="YES" second="YES"/>
+                                </datePickerCell>
+                                <connections>
+                                    <action selector="datepicker1Action:" target="XfG-lQ-9wD" id="8tJ-2x-MT2"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="height" constant="441" id="5RK-VM-QHt"/>
+                            <constraint firstAttribute="height" constant="302" id="5RK-VM-QHt"/>
                             <constraint firstAttribute="width" constant="1150" id="83u-IZ-YCS"/>
-                            <constraint firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="height" multiplier="1150:441" id="vfN-e1-Zwl"/>
+                            <constraint firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="height" multiplier="1150:302" id="vfN-e1-Zwl"/>
                         </constraints>
                     </view>
                     <connections>
@@ -488,7 +496,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="118" y="-621"/>
+            <point key="canvasLocation" x="118" y="-705"/>
         </scene>
     </scenes>
 </document>
