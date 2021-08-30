@@ -49,7 +49,6 @@ func getComboState(comboName:String) -> String{
     if let unwrappeddbHandle = dbHandle{
         outPut = query(dbPointer: unwrappeddbHandle, queryStatementString: sqlStatement)
         sqlite3_close(unwrappeddbHandle)
-        
         }
 return outPut[0]
 }

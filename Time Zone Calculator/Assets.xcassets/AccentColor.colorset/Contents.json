@@ -2,8 +2,13 @@
   "colors" : [
     {
       "color" : {
-        "platform" : "ios",
-        "reference" : "systemGray5Color"
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.676",
+          "green" : "0.657",
+          "red" : "0.658"
+        }
       },
       "display-gamut" : "sRGB",
       "idiom" : "universal"
@@ -16,8 +21,13 @@
         }
       ],
       "color" : {
-        "platform" : "ios",
-        "reference" : "systemGray5Color"
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.821",
+          "green" : "0.797",
+          "red" : "0.798"
+        }
       },
       "display-gamut" : "sRGB",
       "idiom" : "universal"
@@ -30,16 +40,26 @@
         }
       ],
       "color" : {
-        "platform" : "ios",
-        "reference" : "systemGray5Color"
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.168",
+          "green" : "0.161",
+          "red" : "0.160"
+        }
       },
       "display-gamut" : "sRGB",
       "idiom" : "universal"
     },
     {
       "color" : {
-        "platform" : "ios",
-        "reference" : "systemGray5Color"
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.677",
+          "green" : "0.659",
+          "red" : "0.658"
+        }
       },
       "display-gamut" : "display-P3",
       "idiom" : "universal"
@@ -52,8 +72,13 @@
         }
       ],
       "color" : {
-        "platform" : "ios",
-        "reference" : "systemGray5Color"
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.821",
+          "green" : "0.796",
+          "red" : "0.799"
+        }
       },
       "display-gamut" : "display-P3",
       "idiom" : "universal"
@@ -66,8 +91,13 @@
         }
       ],
       "color" : {
-        "platform" : "ios",
-        "reference" : "systemGray5Color"
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "0.168",
+          "green" : "0.163",
+          "red" : "0.158"
+        }
       },
       "display-gamut" : "display-P3",
       "idiom" : "universal"
